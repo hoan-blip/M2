@@ -76,8 +76,8 @@ function searchByDate($customers, $fromDate, $toDate)
 $fromDate = null;
 $toDate = null;
 if ($_SERVER["REQUEST_METHOD"] == "GET") {
-    // $fromDate = $_REQUEST["from"];
-    // $toDate = $_REQUEST["to"];
+    $fromDate = $_REQUEST["from"];
+    $toDate = $_REQUEST["to"];
 }
 $filteredCustomers = searchByDate($customerList, $fromDate, $toDate);
 ?>
